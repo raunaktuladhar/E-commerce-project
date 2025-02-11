@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import './CartItems.css'
 import { ShopContext } from "../../Context/ShopContext";
+import KhaltiPayment from "../KhaltiPayment/KhaltiPayment";
 import remove_icon from '../Assets/cart_cross_icon.png'
 
 const CartItems = () => {
@@ -56,6 +57,7 @@ const CartItems = () => {
                             <h3>Total</h3>
                             <h3>${getTotalCartAmount()}</h3>
                         </div>
+                        <KhaltiPayment></KhaltiPayment>
                     </div>
 
                     <button>Proceed To Checkout</button>
